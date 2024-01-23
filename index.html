@@ -43,6 +43,37 @@
   </head>
   <body>
     <header class="container mx-auto">
+      <!-- navigation  -->
+      <div class="navbar bg-base-100 my-10">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a class="text-red-500">Home </a></li>
+              <li><a>About  </a></li>
+              <li><a>Pages </a></li>
+              <li><a>Blog </a></li>
+               <li><a>Contact </a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-4xl font-extrabold">Hockey<span class="text-red-500 ">'</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-red-500">Home </a></li>
+            <li><a>About  </a></li>
+            <li><a>Pages </a></li>
+            <li><a>Blog </a></li>
+             <li><a>Contact </a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <i class="fa-solid fa-magnifying-glass mr-3 invisible lg:visible"></i>
+          <a class="btn bg bg-red-400 px-5 text-white border-0">GEt Ticket</a>
+        </div>
+      </div>
       <!-- Banner section  -->
       <section>
         <div class="carousel w-full">
@@ -127,7 +158,7 @@
             >
               95%
             </div>
-            <h3 class="text-2xl font-semibold">Prayer Facility</h3>
+            <h3 class="text-2xl font-semibold"> Professional Couch  </h3>
             <p class="text-[#131318]">
               Clearly define the purpose of your travel website
             </p>
@@ -140,7 +171,7 @@
             >
               90%
             </div>
-            <h3 class="text-2xl font-semibold">Prayer Facility</h3>
+            <h3 class="text-2xl font-semibold"> Senior Player</h3>
             <p class="text-[#131318]">
               Clearly define the purpose of your travel website
             </p>
@@ -153,7 +184,7 @@
             >
               80%
             </div>
-            <h3 class="text-2xl font-semibold">Prayer Facility</h3>
+            <h3 class="text-2xl font-semibold"> Training Ground</h3>
             <p class="text-[#131318]">
               Clearly define the purpose of your travel website
             </p>
@@ -378,7 +409,7 @@
           Gain a deeper understanding of strategies, tactics, and the
           ever-evolving dynamics of the game.
         </p>
-        <div class="mt-12 flex flex-col lg:flex-row">
+        <div class="mt-12 flex flex-col items-center lg:flex-row">
           <div class="flex-1">
             <img src="Images/11.png" alt="" />
           </div>
@@ -459,7 +490,7 @@
         </div>
       </section>
       <!-- get in touch  -->
-      <section class="my-24">
+      <section class="my-24"> 
         <h3 class="text-4xl font-extrabold text-center">Get In Touch</h3>
         <p class="font-medium mt-6 text-center">
           Join a community of passionate soccer fans who share your enthusiasm
@@ -467,7 +498,7 @@
           for the sport. Engage in discussions, debates, and celebrations with
           like-minded individuals.
         </p>
-        <div class="">
+        <div class="mt-12 flex flex-col lg:flex-row gap-12 items-center">
           <!-- side  -->
           <div class="space-y-6">
             <div class="bg-green-100 p-8 space-y-6 bg-base-100 shadow-xl">
@@ -481,30 +512,106 @@
             </div>
             <div class="bg-orange-100 p-8 space-y-6 bg-base-100 shadow-xl">
               <figure>
-                <img src="Images/Group 1171275317.png" alt="Shoes" />
+                <img src="Images/Group 1171275318.png" alt="Shoes" />
               </figure>
               <div class="  ">
-                <p>Phone Number :</p>
-                <h2 class="card-title">(+62) 123-321-543</h2>
+                <p>Email :</p>
+                <h2 class="card-title"> 
+                  hockeys@support.com</h2>
               </div>
             </div>
             <div class="bg-sky-100 p-8 space-y-6 bg-base-100 shadow-xl">
               <figure>
-                <img src="Images/Group 1171275317.png" alt="Shoes" />
+                <img src="Images/Group 1171275321.png" alt="Shoes" />
               </figure>
               <div class="  ">
-                <p>Phone Number :</p>
-                <h2 class="card-title">(+62) 123-321-543</h2>
+                <p>Location :</p>
+                <h2 class="card-title">152/1 Mohakhali Wireless Gate</h2>
               </div>
             </div>
           </div>
           <!-- contact -->
-          <div>
-            
+          <div class="flex-1">
+            <div class="grid grid-cols-1 w-full  lg:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="font-bold text-2xl">Your Name:</label><br>
+              <input type="text" name="name" id="name" placeholder="Enter your full name" class="p-5 bg-gray-100 mt-3 w-full rounded-xl outline-none">
+              </div>
+              <div>
+                <label for="email"class="font-bold text-2xl">Your Email:</label><br>
+              <input type="email" name="email" id="email" placeholder="Enter your email"class="p-5 bg-gray-100 mt-3 w-full rounded-xl outline-none">
+              </div>
+              <div>
+                <label for="subject"class="font-bold text-2xl">Your Subject:</label><br>
+              <input type="text" name="subject" id="subject" placeholder="Enter your full name"class="p-5 bg-gray-100 mt-3 w-full rounded-xl outline-none">
+              </div>
+            <div>
+              <label for="phone"class="font-bold text-2xl">Your Phone Number:</label><br>
+              <input type="phone" name="phone" id="phone" placeholder="Enter your phone number"class="p-5 bg-gray-100 mt-3 w-full rounded-xl outline-none">
+            </div>
+            <div class=" lg:col-span-2">
+              <label for="message"class="font-bold text-2xl">Message :</label><br>
+              <input type="text" name="message" id="message" class="p-5 bg-gray-100 w-full h-52 rounded-xl lg:h-96 mt-3 outline-none">
+            </div>
+            <div class="lg:col-span-2">
+              <button class="bg-red-500 text-white p-6 rounded-lg  w-full outline-none">Send Message</button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 bg-gray-200 rounded-xl py-9">
+          <h3 class="text-2xl font-bold text-center">Social Media</h3>
+          <div class="flex justify-center mt-6 gap-4">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
           </div>
         </div>
       </section>
+       
     </main>
-    <footer></footer>
+   
+      <footer class=" p-10 bg-black text-gray-100 flex flex-col lg:flex-row items-center justify-around ">
+        <div class="flex flex-col  items-center lg:items-start  justify-center">
+          <header class="footer-title">Get In Touch</header> 
+          <p class="text-center lg:text-left">Dive into insightful analyses from our team of soccer experts. <br>
+            Gain a deeper understanding of strategies,<br> tactics, and the ever-evolving dynamics of the game.
+            
+            </p>
+          <a class="link link-hover"><i class="fa-regular fa-envelope text-red-600"></i> hockeys@support.com</a>
+          <a class="link link-hover"><i class="fa-solid fa-phone text-red-600"></i> (+62) 123-321-543</a>
+        </div>
+    <div class=" flex gap-28 mt-12 lg:mt-0 ">
+     
+    <div class="flex flex-col">
+      <header class="footer-title">Company</header> 
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Leadership</a>
+      <a class="link link-hover">Careers</a>
+      <a class="link link-hover">News & Articles</a>
+      <a class="link link-hover">Legal Notice</a>
+    </div> 
+    <div class="flex flex-col">
+      <header class="footer-title">Support</header> 
+      <a class="link link-hover">Help Center</a>
+      <a class="link link-hover">FAQ</a>
+      <a class="link link-hover">Ticket Support</a>
+      <a class="link link-hover">Contact us</a>
+    </div>
+    </div>
+     <div class="flex items-center flex-col justify-center mt-12 lg:mt-0" >
+      
+      <header class="footer-title">Services</header>  
+        <a class="link link-hover">Academy</a>
+        <a class="link link-hover">Group Lesson</a>
+        <a class="link link-hover">Privet Lesson</a>
+        <a class="link link-hover">Hockeys for Kids</a>
+        <a class="link link-hover"> Hockeys for Adult</a>
+      
+     </div>
+        
+      </footer>
+     
   </body>
 </html>
